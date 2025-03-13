@@ -1,0 +1,130 @@
+/* Contact Container Styling */
+
+#contacts{
+    
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px 200px;
+}
+
+.formHeading h2{
+    font-size: 36px; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.formHeading h2::before{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: black;
+    margin: 15px 10px;
+}
+
+.formHeading h2::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: black;
+    margin: 15px 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+input, textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: rgb(0,210,255);
+}
+
+.btn2 {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  /* color: #ffffff; */
+  /* background: linear-gradient(90deg, #6c63ff, #5a54e6); */
+  background: rgb(0,210,255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  /* background: linear-gradient(90deg, #5a54e6, #6c63ff); */
+}
+  
+  /* Contact Info Section */
+  /* .contact-info {
+    flex: 1;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-box .icon {
+    font-size: 24px;
+    color: #6c63ff;
+  }
+  
+  .info-box h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .info-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+  } */
+  
+  

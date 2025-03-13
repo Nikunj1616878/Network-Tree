@@ -1,0 +1,36 @@
+/* Base styles for the button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 1000;
+  }
+  
+  /* Button hover effect */
+  .scroll-to-top:hover {
+    /* background-color: white; */
+    color: rgb(0,210,255);
+    transform: scale(1.1);
+  }
+  
+  /* Visible state */
+  .scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: all translateY(0);
+  }
+  

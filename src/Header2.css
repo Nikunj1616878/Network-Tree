@@ -1,0 +1,188 @@
+/* General Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 210, 255);
+    padding: 1vh 2vw; /* Using vh and vw for responsive padding */
+    box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 100;
+  }
+  
+  /* Logo Section */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw; /* Responsive gap between logo elements */
+  }
+  
+  .logo img {
+    width: 6vw; /* Responsive image width */
+    height: auto;
+  }
+  
+  .logo h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3.5vw; /* Font size now adjusts according to viewport width */
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+  
+  /* Navigation Bar */
+  .navBar {
+    display: flex;
+    gap: 2vw; /* Gap between navigation items */
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    font-size: 1.5vw; /* Font size adjusts with viewport */
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 1vh 2vw; /* Padding responsive to viewport */
+    border-radius: 0.5vw;
+    transition: all 0.3s ease;
+  }
+  
+  .navBar a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  
+  /* Menu Icon (Hamburger Icon) */
+  .menu-icon {
+    display: none;
+    font-size: 6vw; /* Icon size for mobile */
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium and small screens */
+  @media screen and (max-width: 64rem) { /* Adjusted to cover tablets and small laptops */
+    .menu-icon {
+      display: block;
+    }
+  
+    .navBar {
+      display: none;
+      position: absolute;
+      top: 8vh; /* Space from top */
+      right: 2vw; /* Position the menu to the right */
+      background-color: rgb(0, 210, 255);
+      flex-direction: column;
+      gap: 2vh; /* Space between items */
+      padding: 2vh 2vw;
+      border-radius: 1vw;
+      box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+      width: 60vw; /* Width of the mobile menu */
+      z-index: 99;
+    }
+  
+    .navBar.open {
+      display: flex;
+    }
+  
+    .navBar a {
+      font-size: 4vw; /* Responsive font size for mobile */
+      padding: 2vh 3vw;
+      text-align: center;
+    }
+  }
+  
+  /* For Small Devices (iPhone SE, etc.) */
+  @media screen and (max-width: 30rem) { /* More narrow screens */
+    .logo img {
+      width: 10vw; /* Smaller logo for very small screens */
+    }
+  
+    .logo h3 {
+      font-size: 6vw; /* Larger font for smaller screens */
+    }
+  
+    .navBar a {
+      font-size: 5vw; /* Responsive font size */
+      padding: 2vh 3vw;
+    }
+  
+    .navBar {
+      gap: 3vh; /* Bigger gap between menu items */
+      justify-content: center;
+    }
+  }
+  
+  /* For Tablets (iPad, Surface Pro, etc.) */
+  @media screen and (max-width: 63.4375rem) and (min-width: 48rem) {
+    .header {
+      flex-direction: row; /* Ensure row layout for tablets */
+      padding: 2vh 5vw; /* Adjust padding */
+    }
+  
+    .logo {
+      margin-bottom: 1.5vh; /* Spacing between logo and nav */
+    }
+  
+    .logo img {
+      width: 7vw; /* Adjust logo size for tablets */
+    }
+  
+    .logo h3 {
+      font-size: 4vw;
+    }
+  
+    .navBar {
+      gap: 2vw;
+      justify-content: center;
+    }
+  
+    .navBar a {
+      font-size: 3.5vw;
+      padding: 1.5vh 2.5vw;
+    }
+  }
+  
+  /* Small Laptop and larger mobile screens */
+  @media screen and (max-width: 48vw) and (min-width: 30rem) {
+    .header {
+      padding: 2vh 4vw;
+    }
+  
+    .logo h3 {
+      font-size: 5vw;
+    }
+  
+    .navBar a {
+      font-size: 3vw;
+      padding: 1.5vh 2vw;
+    }
+  }
+  
+  /* Extremely Small Screens (e.g., Nest Hub, Smart devices) */
+  @media screen and (max-width: 20rem) {
+    .header {
+      padding: 3vh 4vw;
+    }
+  
+    .logo img {
+      width: 12vw;
+    }
+  
+    .logo h3 {
+      font-size: 8vw;
+    }
+  
+    .navBar a {
+      font-size: 6vw;
+      padding: 3vh 4vw;
+    }
+  
+    .navBar {
+      padding: 2vh;
+      gap: 1vh;
+    }
+  }
+  
