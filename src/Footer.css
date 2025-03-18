@@ -1,6 +1,9 @@
 .footer {
     margin-top: 7vw;
-    position:relative;
+    /* position:relative; */
+    /* Width line and position are new */
+    width: 105vw; 
+    position:fixed;
     bottom: 0;
     position: bottom;
     background-color: rgb(0,210,255); 
@@ -78,9 +81,9 @@
     height: auto;
   }  
 
-  .midFooter > h3{
-    /* margin-left: 30px; */
-  }
+  /* .midFooter > h3{
+    /* margin-left: 30px; 
+  } */
   
   .rightFooter {
     width: 20%;

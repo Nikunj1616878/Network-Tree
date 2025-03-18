@@ -19,13 +19,10 @@ export default function ProductCard(props) {
     return(
         <>
         <div>
-            {/* <div className="card mx-2" style={{ width: "18"}} > */}
             <div className="card mx-2" >
                 <img src={slides[props.id-1].image} class="card-img-top"  alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    {/* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-                    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
                 </div>
             </div>
         </div>

@@ -38,15 +38,13 @@ export default function Home() {
         console.log(val);
 
 
-        // setCurr((temp)=>val);
-
         return val;
     }
 
     return (
         <>
             
-            <div className='carousel'>
+            {/* <div className='carousel'>
                 <CarouselComponent3 />
             </div>
              <div className='about row'>
@@ -89,10 +87,10 @@ export default function Home() {
                         <p>Choose <b>Global Sales Corporation</b> for innovative services and long-term partnerships.</p>
                     </div>
                 </div>
-            </div>
-            {/* <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a> */}
+            </div> 
+             <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a> */}
             
-            {/* <Form/> */}
+             {/* <Form/> */}
         </>
     )
 }
